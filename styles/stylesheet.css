@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #232323;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  height: 50px;
+  background-color: #ffffff;
+}
+
+#footer {
+  height: 50;
+  background-color: #000000;
+}
+
+.hamburger-button {
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+  border: none;
+  margin: 12px;
+
+  background: linear-gradient(
+    to bottom,
+    #232323, #232323 20%,
+    white 20%, white 40%,
+    #232323 40%, #232323 60%,
+    white 60%, white 80%,
+    #232323 80%, #232323 100%
+  );
+}
+
+#sidebar {
+  position: absolute;
+  width: 250px;
+  height: 100%;
+  background-color: white;
+  transition: 0.12s;
+  transition-timing-function: ease-out;
+  padding: 32px;
+}
+
+.open {
+  left: 0
+}
+
+.closed {
+  left: -250px;
+}
+
+.banner {
+  height: 250px;
+  width: 100%;
+  background-color: #000000;
+}
