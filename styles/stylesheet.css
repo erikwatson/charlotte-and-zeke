@@ -37,6 +37,7 @@ body {
 }
 
 #sidebar {
+  z-index: 1;
   position: absolute;
   width: 250px;
   height: 100%;
@@ -58,4 +59,27 @@ body {
   height: 250px;
   width: 100%;
   background-color: #000000;
+}
+
+#dark-overlay {
+  width: 100%;
+  height: 100%;
+
+  background-color: #000000;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  transition: 0.12s;
+  transition-timing-function: ease-out;
+}
+
+#dark-overlay.closed {
+  opacity: 0%;
+  pointer-events: none;
+}
+
+#dark-overlay.open {
+  opacity: 85%;
+  pointer-events: all;
 }
