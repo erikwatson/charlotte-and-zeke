@@ -176,7 +176,6 @@ body > .banner {
   width: 100%;
   display: grid;
   grid-template-columns: 0.5fr 1fr 0.5fr;
-  margin-bottom: 50px;
 }
 
 .wrapper .left {
@@ -189,6 +188,7 @@ body > .banner {
 .wrapper .middle {
   background-color: #161819;
   color: #e3e3e3;
+  padding-bottom: 50px;
 }
 
 .wrapper .right {
@@ -214,6 +214,8 @@ body > .banner {
   height: 250px;
   display: grid;
   grid-template-columns: 250px 1fr;
+  z-index: 1;
+  position: relative;
 }
 
 #footer .left {
