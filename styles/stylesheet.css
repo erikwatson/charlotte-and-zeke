@@ -154,9 +154,6 @@ body {
   height: 400px;
   width: 100%;
   background-color: #000000;
-
-  background-image: url('../images/panda.png');
-  background-repeat: repeat;
 }
 
 #dark-overlay {
@@ -194,18 +191,19 @@ body {
   background-color: red;
   background-image: url('../images/misc/Background/VHS\ BG\ Left.png');
   background-size: cover;
-  background-position: 0% 0%;
+  background-position: 100% 0%;
 }
 
 .middle {
-  background-color: green;
+  background-color: #161819;
+  color: #e3e3e3;
 }
 
 .right {
   background-color: blue;
   background-image: url('../images/misc/Background/VHS\ BG\ Right.png');
   background-size: cover;
-  background-position: 100% 0%;
+  background-position: 0% 0%;
 }
 
 .white-fade {
