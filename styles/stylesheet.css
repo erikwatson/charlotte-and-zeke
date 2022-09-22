@@ -83,29 +83,6 @@ body {
   object-fit: cover;
 }
 
-#footer {
-  height: 50px;
-  line-height: 3rem;
-  font-size: 1.5rem;
-  position: relative;
-  z-index: 0;
-
-  background: rgb(31, 157, 206);
-  background: linear-gradient(
-    0deg,
-    rgba(31, 157, 206, 1) 0%,
-    rgba(31, 157, 206, 1) 20%,
-    rgba(254, 255, 31, 1) 20%,
-    rgba(254, 255, 31, 1) 40%,
-    rgba(254, 61, 77, 1) 40%,
-    rgba(254, 61, 77, 1) 60%,
-    rgba(255, 127, 47, 1) 60%,
-    rgba(255, 127, 47, 1) 80%,
-    rgba(240, 183, 212, 1) 80%,
-    rgba(240, 183, 212, 1) 100%
-  );
-}
-
 .hamburger-button {
   width: 26px;
   height: 26px;
@@ -191,19 +168,19 @@ body {
   grid-template-columns: 0.5fr 1fr 0.5fr;
 }
 
-.left {
+.wrapper .left {
   background-color: red;
   background-image: url('../images/misc/Background/VHS\ BG\ Left.png');
   background-size: cover;
   background-position: 100% 0%;
 }
 
-.middle {
+.wrapper .middle {
   background-color: #161819;
   color: #e3e3e3;
 }
 
-.right {
+.wrapper .right {
   background-color: blue;
   background-image: url('../images/misc/Background/VHS\ BG\ Right.png');
   background-size: cover;
@@ -220,4 +197,20 @@ body {
     rgba(255, 255, 255, 1) 0%,
     rgba(255, 255, 255, 0) 100%
   );
+}
+
+#footer {
+  height: 250px;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+}
+
+#footer .left {
+  background-image: url('../images/misc/Background/Footer\ 1.gif');
+}
+
+
+#footer .right {
+  background-image: url('../images/misc/Background/Footer\ 2.gif');
+  background-repeat: repeat-x;
 }
