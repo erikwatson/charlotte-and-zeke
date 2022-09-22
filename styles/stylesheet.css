@@ -137,6 +137,16 @@ body {
   position: relative;
 }
 
+.banner .logo {
+  height: inherit;
+  margin: auto;
+  max-width: 1280px;
+}
+
+.banner .logo img {
+  height: inherit;
+}
+
 #dark-overlay {
   width: 100%;
   height: 100%;
