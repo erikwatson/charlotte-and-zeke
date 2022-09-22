@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   background-color: #161819;
   font-family: "Lato", sans-serif;
@@ -181,7 +185,25 @@ body {
 
 .wrapper {
   margin: auto;
-  max-width: 1280px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+}
+
+.left {
+  background-color: red;
+  background-image: url('../images/misc/Background/VHS\ BG\ Left.png');
+  background-size: cover;
+}
+
+.middle {
+  background-color: green;
+}
+
+.right {
+  background-color: blue;
+  background-image: url('../images/misc/Background/VHS\ BG\ Right.png');
+  background-size: cover;
 }
 
 .white-fade {
