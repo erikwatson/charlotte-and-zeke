@@ -14,6 +14,11 @@ simple. As such, there is also a list of things that we _don't_ use.
   + JavaScript
 
 
+## Libraries Used
+
+  + [fslightbox](https://fslightbox.com/javascript) Vanilla version
+
+
 ## Technologies avoided
 
   + Build tools
