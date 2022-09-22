@@ -127,7 +127,7 @@ body {
   left: -350px;
 }
 
-.banner {
+body > .banner {
   height: 400px;
   width: 100%;
   background-color: #000000;
@@ -223,4 +223,23 @@ body {
 #footer .right {
   background-image: url('../images/misc/Background/Footer\ 2.gif');
   background-repeat: repeat-x;
+}
+
+.bio {
+  background-color: black;
+  width: 100%;
+}
+
+.bio .banner {
+  background-color: white;
+  width: 200%;
+  height: 250px;
+  position: relative;
+  left: -50%;
+  margin-top: 75px;
+  text-align: center;
+}
+
+.bio .banner img {
+  height: 100%;
 }
