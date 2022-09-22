@@ -230,6 +230,14 @@ body > .banner {
   width: 100%;
 }
 
+.bio .galery ul {
+  list-style: none;
+}
+
+.bio .gallery li {
+  display: inline-block;
+}
+
 .bio .banner {
   background-color: white;
   width: 200%;
