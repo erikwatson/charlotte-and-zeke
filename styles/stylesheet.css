@@ -194,6 +194,7 @@ body {
   background-color: red;
   background-image: url('../images/misc/Background/VHS\ BG\ Left.png');
   background-size: cover;
+  background-position: 0% 0%;
 }
 
 .middle {
@@ -204,6 +205,7 @@ body {
   background-color: blue;
   background-image: url('../images/misc/Background/VHS\ BG\ Right.png');
   background-size: cover;
+  background-position: 100% 0%;
 }
 
 .white-fade {
