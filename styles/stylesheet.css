@@ -127,7 +127,7 @@ body {
   left: -350px;
 }
 
-body > .banner {
+body > .scroll-pane {
   height: 400px;
   width: 100%;
   background-color: #000000;
@@ -137,13 +137,13 @@ body > .banner {
   position: relative;
 }
 
-.banner .logo {
+.scroll-pane .logo {
   height: inherit;
   margin: auto;
   max-width: 1280px;
 }
 
-.banner .logo img {
+.scroll-pane .logo img {
   height: inherit;
 }
 
@@ -239,7 +239,7 @@ body > .banner {
   display: inline-block;
   text-align: center;
   padding: 0px;
-  margin: 0px;
+  margin: 275px 0px 0px 0px;
 }
 
 .bio .gallery li {
@@ -247,11 +247,14 @@ body > .banner {
 }
 
 .bio .banner {
-  background-color: white;
   height: 250px;
-  position: relative;
-  margin-top: 75px;
+  width: 100%;
+  background-size: auto 250px;
+  margin-top: 20px;
+  position: absolute;
   text-align: center;
+  left: 0;
+  background-image: url('../images/art/Art\ Page\ Bio\ Tile.png');
 }
 
 .bio .banner img {
