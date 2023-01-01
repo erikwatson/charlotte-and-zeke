@@ -16,3 +16,10 @@ document.addEventListener('click', evt => {
     overlay.classList.add('closed')
   }
 })
+
+document.addEventListener('scroll', evt => {
+  const position = `${window.scrollY}px`
+
+  sidebar.style.top = position
+  overlay.style.top = position
+})
