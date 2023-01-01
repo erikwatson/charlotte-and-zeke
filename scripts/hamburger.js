@@ -1,7 +1,8 @@
+const hamburger = document.getElementById('hamburger-button')
 const sidebar = document.getElementById('sidebar')
 const overlay = document.getElementById('dark-overlay')
 
-document.addEventListener('click', evt => {
+function toggleMenu () {
   if (sidebar.classList.contains('closed')) {
     sidebar.classList.remove('closed')
     sidebar.classList.add('open')
@@ -15,7 +16,10 @@ document.addEventListener('click', evt => {
     overlay.classList.remove('open')
     overlay.classList.add('closed')
   }
-})
+}
+
+hamburger.addEventListener('click', toggleMenu)
+overlay.addEventListener('click', toggleMenu)
 
 document.addEventListener('scroll', evt => {
   const position = `${window.scrollY}px`
