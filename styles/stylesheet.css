@@ -33,7 +33,7 @@ body {
 }
 
 #mobile-header {
-  height: 50px;
+  height: 64px;
   background-color: #ffffff;
   display: none;
 }
@@ -90,8 +90,8 @@ body {
 }
 
 #hamburger-button {
-  width: 26px;
-  height: 26px;
+  width: 38px;
+  height: 38px;
   display: inline-block;
   border: none;
   margin: 12px;
