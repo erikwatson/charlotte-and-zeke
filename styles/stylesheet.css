@@ -244,15 +244,20 @@ body > .scroll-pane {
   grid-template-columns: 256px 1fr;
   z-index: 1;
   position: relative;
+  background-color: #182439;
 }
 
 #footer .left {
   background-image: url('/images/misc/Background/Footer\ 1.gif');
+  position: relative;
+  top: -16px;
 }
 
 
 #footer .right {
   background-image: url('/images/misc/Background/Footer\ 2.gif');
+  position: relative;
+  top: -16px;
   background-repeat: repeat-x;
 }
 
