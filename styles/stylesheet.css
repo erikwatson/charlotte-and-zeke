@@ -362,6 +362,10 @@ body > .scroll-pane {
   .bio .banner {
     height: 95px;
   }
+
+  .gallery img {
+    width: 100px;
+  }
 }
 /*
 @media screen and (max-width: 360px) {
