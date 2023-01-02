@@ -18,12 +18,13 @@ function toggleMenu () {
   }
 }
 
-hamburger.addEventListener('click', toggleMenu)
-overlay.addEventListener('click', toggleMenu)
-
-document.addEventListener('scroll', evt => {
+function fixSidebarAndOverlayPosition() {
   const position = `${window.scrollY}px`
 
   sidebar.style.top = position
   overlay.style.top = position
-})
+}
+
+hamburger.addEventListener('click', toggleMenu)
+overlay.addEventListener('click', toggleMenu)
+document.addEventListener('scroll', fixSidebarAndOverlayPosition)
