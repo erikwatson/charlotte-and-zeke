@@ -12,6 +12,8 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  line-height: 1.8rem;
+  letter-spacing: 0.01rem;
 }
 
 .flip {
@@ -110,7 +112,7 @@ body {
 }
 
 #sidebar {
-  z-index: 2;
+  z-index: 3;
   position: absolute;
   width: 350px;
   height: 100%;
@@ -141,7 +143,7 @@ body {
 }
 
 body > .scroll-pane {
-  height: 400px;
+  height: 300px;
   width: 100%;
   background-color: #000000;
   background-image: linear-gradient(0deg, rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('/images/panda.png');
@@ -153,7 +155,7 @@ body > .scroll-pane {
 .scroll-pane .logo {
   height: inherit;
   margin: auto;
-  max-width: 1280px;
+  max-width: 960px;
 }
 
 .scroll-pane .logo img {
@@ -168,7 +170,7 @@ body > .scroll-pane {
   position: absolute;
   left: 0;
   top: 0;
-  z-index: 1;
+  z-index: 2;
 
   transition: all 0.12s, top 0s;
   transition-timing-function: ease-out;
@@ -314,8 +316,6 @@ body > .scroll-pane {
   }
 
   body > .scroll-pane {
-    height: 300px;
-    background-size: auto 103px;
     display: flex;
     align-items: center;
   }
