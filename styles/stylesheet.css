@@ -144,7 +144,7 @@ body > .scroll-pane {
   height: 400px;
   width: 100%;
   background-color: #000000;
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('../images/panda.png');
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('/images/panda.png');
   background-attachment: fixed;
   box-shadow: 0px 5px 10px #161819;
   position: relative;
@@ -189,16 +189,18 @@ body > .scroll-pane {
   margin: auto;
   width: 100%;
   display: grid;
-  grid-template-columns: auto fit-content(960px) auto;
+  grid-template-columns: 1fr fit-content(960px) 1fr;
 }
 
 .wrapper .left {
-  background-image: url('../images/misc/Background/VHS\ BG\ Left.png');
+  background-image: url('/images/misc/Background/VHS\ BG\ Left.png');
   background-size: 100% auto;
   background-position: 100% 0%;
   background-repeat: no-repeat;
-  width: 400px;
+  width: 100%;
   margin-left: auto;
+  max-width: 300px;
+  min-width: 200px;
 }
 
 .wrapper .middle {
@@ -211,13 +213,15 @@ body > .scroll-pane {
 }
 
 .wrapper .right {
-  background-image: url('../images/misc/Background/VHS\ BG\ Right.png');
+  background-image: url('/images/misc/Background/VHS\ BG\ Right.png');
   background-size: 100% auto;
   background-position: 0% 0%;
   background-repeat: no-repeat;
-  width: 400px;
+  width: 100%;
   margin-left: 0px;
   margin-right: auto;
+  max-width: 300px;
+  min-width: 200px;
 }
 
 .white-fade {
@@ -241,12 +245,12 @@ body > .scroll-pane {
 }
 
 #footer .left {
-  background-image: url('../images/misc/Background/Footer\ 1.gif');
+  background-image: url('/images/misc/Background/Footer\ 1.gif');
 }
 
 
 #footer .right {
-  background-image: url('../images/misc/Background/Footer\ 2.gif');
+  background-image: url('/images/misc/Background/Footer\ 2.gif');
   background-repeat: repeat-x;
 }
 
@@ -276,11 +280,28 @@ body > .scroll-pane {
   position: absolute;
   text-align: center;
   left: 0;
-  background-image: url('../images/art/Art\ Page\ Bio\ Tile.png');
+  background-image: url('/images/art/Art\ Page\ Bio\ Tile.png');
+  display: flex;
+  justify-content: center;
 }
 
-.bio .banner img {
-  height: 100%;
+.bio .banner .column {
+  max-width: 960px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 24px 0 24px;
+}
+
+.bio .banner .column .pixie {
+  height: 250px;
+  position: relative;
+  top: 0px;
+}
+
+.bio .banner .column .text {
+  margin-top: 20px;
+  height: 180px;
 }
 
 @media screen and (max-width: 960px) {
