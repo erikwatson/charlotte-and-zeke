@@ -326,7 +326,7 @@ body > .scroll-pane {
   }
 
   body > .scroll-pane .logo {
-    height: 90%;
+    height: 80%;
     display: flex;
     align-items: center;
   }
