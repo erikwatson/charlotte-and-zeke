@@ -248,14 +248,14 @@ body > .scroll-pane {
 }
 
 #footer .left {
-  background-image: url('/images/misc/Background/Footer\ 1.gif');
+  background-image: url('/images/misc/Background/Footer.png');
   position: relative;
   top: -16px;
 }
 
 
 #footer .right {
-  background-image: url('/images/misc/Background/Footer\ 2.gif');
+  background-image: url('/images/misc/Background/Footer.png');
   position: relative;
   top: -16px;
   background-repeat: repeat-x;
