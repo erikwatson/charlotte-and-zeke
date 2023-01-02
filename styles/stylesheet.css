@@ -307,7 +307,6 @@ body > .scroll-pane {
 }
 
 .bio .banner .column .text {
-  margin-top: 20px;
   height: 180px;
 }
 
@@ -324,6 +323,10 @@ body > .scroll-pane {
 	width: 100%;
   max-width: max-content;
 	height: max-content;
+}
+
+.margin-top-25-mobile {
+  margin-top: unset;
 }
 
 @media screen and (max-width: 960px) {
@@ -374,12 +377,49 @@ body > .scroll-pane {
     background-size: auto 128px;
   } */
 
-  .bio .banner {
+  /* .bio .banner {
     height: 95px;
+  } */
+
+  .bio .banner {
+    height: auto;
+    position: relative;
+    background-image: none;
+  }
+
+  .bio .banner .column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bio .banner .column .pixie {
+    display: block;
+    position: initial;
+    height: initial;
+  }
+
+  .bio .banner .column .text {
+    height: initial;
   }
 
   .gallery img {
     width: 100px;
+  }
+
+  .pixie {
+    width: 100%;
+  }
+
+  .text {
+    width: 100%;
+  }
+
+  .bio .gallery ul {
+    margin: 25px 0px 0px 0px;
+  }
+
+  .margin-top-25-mobile {
+    margin-top: 25px;
   }
 }
 /*
